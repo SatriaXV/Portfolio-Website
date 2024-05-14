@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Portfolio" />
+        <meta name="author" content="Kurniafitra Satria" />
+        <title>Portofolio - Kurniafitra Satria</title>
+        <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <link href="static/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100 bg-light">
+        <main class="flex-shrink-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{{ url_for('index') }}"><span class="fw-bolder text-primary">portosaya.com</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}">Beranda</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('resume') }}">Daftar Riwayat Hidup</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ url_for('projects') }}">Proyek Pemrogaman</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Proyek Pemrograman</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h3 class="text-muted mb-1 small fw-bolder">Januari 2024</h3>
+                                            <h2 class="fw-bolder">Kalkulator Sederhana </h2>
+                                            <p>Program ini merupakan proyek serius pertama saya dalam mempelajari pemrograman Python.</br></p>
+                                            <p>Kalkulator sederhana ini dapat melakukan operasi matematika dasar yaitu penjumlahan, pengurangan, pembagian, dan perkalian.</p>
+                                            <h3 class="text-muted mb-2 small fw-bolder">Klik "run" untuk menjalankan kalkulator</h3>
+                                            <iframe src="https://trinket.io/embed/python3/c8942700d9?outputOnly=true&runOption=run" width="90%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                            <a href="https://trinket.io/python3/c8942700d9?outputOnly=true&runOption=run" class="btn btn-primary btn-sm" role="button" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">Jalankan program (mobile)</a>
+                                            <a href="https://gist.githubusercontent.com/SatriaXV/8b1e05cbcc1c31a6bad23049dc366280/raw/71df09fae11ba3a9377e1b76d4df9d28f8ed7413/kalkulator.py" class="btn btn-light btn-sm" role="button" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 2px;">Lihat kode program</a>  
+                                        </div>
+                                        <img class="img-fluid" src="static/images/calc.png" alt="calculator" style="width: 40%; height: auto; transform: translateX(-10%); margin: 2px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h3 class="text-muted mb-1 small fw-bolder">Januari 2024</h3>
+                                            <h2 class="fw-bolder">Program Enkripsi</br> Sandi Caesar</h2>
+                                            <p>Sandi Caesar atau Caesar cipher adalah teknik enkripsi sederhana yang paling terkenal dan sering digunakan sebagai dasar enkripsi yang lebih rumit.</br></p>
+                                            <p>Metode ini ditemukan dan digunakan oleh Julius Caesar untuk berkomunikasi dengan para jenderalnya yaitu dengan menggeser setiap huruf dalam surat terhadap sejumlah posisi.</br></p>
+                                            <h3 class="text-muted mb-2 small fw-bolder">Klik "run" untuk menjalankan program enkripsi</h3>
+                                            <iframe src="https://trinket.io/embed/python3/f8c8bad4fb?outputOnly=true&runOption=run" width="90%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+                                            <a href="https://trinket.io/python3/f8c8bad4fb?outputOnly=true&runOption=run" class="btn btn-primary btn-sm" role="button" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;">Jalankan program (mobile)</a>
+                                            <a href="https://gist.githubusercontent.com/SatriaXV/f5e1fe3e56375185272dbb7949f2b438/raw/e27a051fb821d24d1eb84e57e88946551798cabe/Enkripsi_Caesar.py" class="btn btn-light btn-sm" role="button" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 2px;">Lihat kode program</a>  
+                                        </div>
+                                        <img class="img-fluid" src="static/images/caesar.png" alt="caesar-cipher" style="width: 40%; height: auto; transform: translateX(-10%); margin: 2px;" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h3 class="text-muted mb-1 small fw-bolder">Februari 2024</h3>
+                                            <h2 class="fw-bolder">portosaya.com</br>(Web Development)</h2>
+                                            <p>Situs portofolio ini adalah situs pertama yang saya yang saya buat sepenuhnya luar-dalam (full-stacks). Pengerjaan situs ini mulai pada akhir Februari dan selesai pada pertengahan Maret.</br></p>
+                                            <p>Tampilan luar situs ini menggunakan bahasa pemrograman HTML, CSS, dan JavaScript sedangkan mekanisme server situs ini menggunakan bahasa pemrograman Python.</br></p>
+                                            <a href="https://gist.githubusercontent.com/SatriaXV/f5e1fe3e56375185272dbb7949f2b438/raw/e27a051fb821d24d1eb84e57e88946551798cabe/Enkripsi_Caesar.py" class="btn btn-light btn-sm" role="button" target="_blank" style="padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 2px;">Lihat kode program</a>  
+                                        </div>
+                                        <img class="img-fluid" src="static/images/web-1.png" alt="portofolio website" style="width: 40%; height: auto; transform: translateX(-10%); margin: 2px;" />
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        <footer class="bg-white py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Kurniafitra Satria 2024</div></div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="static/js/scripts.js"></script>
+    </body>
+</html>
